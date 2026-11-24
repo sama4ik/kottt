@@ -1,0 +1,24 @@
+{
+  "name": "ice-king-cartoon-short",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "stills": "node tools/stills.mjs stills \"20,300,525,1105\" 0.5",
+    "render": "node tools/render.mjs",
+    "studio": "remotion studio src/iceking/index.ts --public-dir public"
+  },
+  "dependencies": {
+    "remotion": "^4.0.535",
+    "@remotion/cli": "^4.0.535",
+    "@remotion/bundler": "^4.0.535",
+    "@remotion/renderer": "^4.0.535",
+    "three": "^0.170.0",
+    "postprocessing": "^6.39.6",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  },
+  "devDependencies": {
+    "@types/three": "^0.170.0",
+    "typescript": "^5.6.0"
+  }
+}
